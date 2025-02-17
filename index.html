@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Upload and Download</title>
+</head>
+<body>
+    <h1>Upload and Download Files</h1>
+
+    <!-- Formulário para upload de arquivos -->
+    <h2>Upload File</h2>
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        <label for="file">Choose a file:</label>
+        <input type="file" name="file" id="file" required>
+        <button type="submit">Upload</button>
+    </form>
+
+    <hr>
+
+    <!-- Link para baixar arquivos -->
+    <h2>Download File</h2>
+    <p>Enter the filename to download:</p>
+    <form action="/download" method="get">
+        <label for="filename">Filename:</label>
+        <input type="text" name="filename" id="filename" placeholder="example.txt" required>
+        <button type="submit">Download</button>
+    </form>
+</body>
+</html>

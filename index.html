@@ -18,13 +18,10 @@
 
     <hr>
 
-    <!-- Link para baixar arquivos -->
-    <h2>Download File</h2>
-    <p>Enter the filename to download:</p>
-    <form action="/download" method="get">
-        <label for="filename">Filename:</label>
-        <input type="text" name="filename" id="filename" placeholder="example.txt" required>
-        <button type="submit">Download</button>
-    </form>
+    <!-- Lista de arquivos disponíveis para download -->
+    <h2>Available Files</h2>
+    <ul>
+        {{file_list}}
+    </ul>
 </body>
 </html>
